@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code_Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            h4 {
+                text-align: center;
+            }
+        </style>
+    </head>
+
+<body>
+    <h4>
+        <button class="button" data-text="Awesome">
+            <span class="actual-text">&nbsp;BrewScriptor&nbsp;</span>
+            <span aria-hidden="true" class="front-text">&nbsp;BrewScriptor&nbsp;</span>
+        </button>
+    </h4>
+    <div class="cursor"></div>
+    <div class="loader">
+        <div class="container">
+            <div class="coffee-header">
+                <div class="coffee-header__buttons coffee-header__button-one"></div>
+                <div class="coffee-header__buttons coffee-header__button-two"></div>
+                <div class="coffee-header__display"></div>
+                <div class="coffee-header__details"></div>
+            </div>
+            <div class="coffee-medium">
+                <div class="coffe-medium__exit"></div>
+                <div class="coffee-medium__arm"></div>
+                <div class="coffee-medium__liquid"></div>
+                <div class="coffee-medium__smoke coffee-medium__smoke-one"></div>
+                <div class="coffee-medium__smoke coffee-medium__smoke-two"></div>
+                <div class="coffee-medium__smoke coffee-medium__smoke-three"></div>
+                <div class="coffee-medium__smoke coffee-medium__smoke-for"></div>
+                <div class="coffee-medium__cup"></div>
+            </div>
+            <div class="coffee-footer"></div>
+        </div>
+    </div>
+
+    <div class="container1">
+        <div class="left">
+            <div class="box">
+                <label for=""><i class="fa-brands fa-html5"></i>HTML</label>
+                <textarea id="html-code" onkeyup="run()"
+                    placeholder="Type '~~' and press Enter for HTML boilerplate"></textarea>
+            </div>
+
+            <div class="box">
+                <label for=""><i class="fa-brands fa-css3-alt"></i>CSS</label>
+                <textarea id="css-code" onkeyup="run()"></textarea>
+            </div>
+
+            <div class="box">
+                <label for=""><i class="fa-brands fa-js"></i>JavaScript</label>
+                <textarea id="js-code" onkeyup="run()"></textarea>
+            </div>
+        </div>
+
+        <div class="right">
+            <label for=""><i class="fa-solid fa-play"></i>Output</label>
+            <iframe id="output"></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
